@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login_assets/login.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <section id="login">
+
+        <body>
+            <!--==================== HEADER ====================-->
+            <header class="header" id="header">
+                <nav class="nav container">
+                    <a href="" class="nav__logo">
+                        <img src="assets/img/logo.png" alt="logo image">
+                        Environment Pollution
+                    </a>
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="index.html" class="nav__link ">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="index.html " class="nav__link">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="index.html" class="nav__link">Types</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="donate.html" class="nav__link">Donate</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="login.html" class="nav__link active-link">Login</a>
+                            </li>
+                        </ul>
+                        <!-- close button -->
+                        <div class="nav__close" id="nav-close">
+                            <i class="ri-close-line"></i>
+                        </div>
+                        <img src="assets/img/snow-img.png" alt="nav image" class="nav__img-1">
+                        <img src="assets/img/snow-img.png" alt="nav image" class="nav__img-2">
+                    </div>
+                    <!-- Toggle button  -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-apps-2-line"></i>
+                    </div>
+                </nav>
+            </header>
+        
+    </section>
+    <div class="glass-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="#" method="POST">
+
+                <input type="text" id="username" name="username" required placeholder="Username">
+                
+                <input type="password" id="password" name="password" required placeholder="Password">
+                
+                <div class="options">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                
+                <button type="submit">Login</button>
+
+                <p>Don't have an account? <a href="#" id="register">Register</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Donation Form</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: hsl(210, 32%, 4%);
+
+    }
+
+    #donationForm {
+        width: 48vw;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.053);
+        margin: 160px auto;
+        box-shadow: 0px 0px 10px #cccccc;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        /* margin-top: 12rem; */
+    }
+
+    #donationForm h1 {
+        text-align: center;
+        color: #fff;
+    }
+
+    #donationForm p {
+        text-align: center;
+        color: #666666;
+    }
+
+    #donationForm label {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+
+    #donationForm input[type="text"],
+    #donationForm input[type="email"],
+    #donationForm input[type="number"],
+    #donationForm select {
+        width: 20vw;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #dddddd;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+
+    #donationForm input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        color: #ffffff;
+        background-color: #007BFF;
+        border: none;
+        cursor: pointer;
+    }
+
+    select#method {
+        color: #666666;
+    }
+
+    .dlogo {
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10vw;
+    }
+
+    .about__snow-1 {
+        top: -6rem;
+        left: -7rem;
+    }
+
+    .about__snow-2 {
+        top: 52rem;
+        left: 52rem;
+    }
+
+    input#firstName,
+    input#lastName,
+    input#email,
+    input#amount
+    {
+        color: white;
+    }
+
+</style>
+<script>
+    document.getElementById('donationForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Thank you for your donation!');
+    });
+
+</script>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav__logo">
+                <img src="assets/img/logo.png" alt="logo image" id="dlogo">
+                Environment Pollution
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link ">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Types</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="donate.html" class="nav__link active-link">Donate</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="login.html" class="nav__link">Login</a>
+                    </li>
+                </ul>
+                <!-- close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+                <img src="assets/img/snow-img.png" alt="nav image" class="nav__img-1">
+                <img src="assets/img/snow-img.png" alt="nav image" class="nav__img-2">
+            </div>
+            <!-- Toggle button  -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-2-line"></i>
+            </div>
+        </nav>
+    </header>
+    <form id="donationForm">
+        <img src="assets/img/snow-img.png" alt="about snow" class="about__snow-1">
+        <img src="assets/img/snow-img.png" alt="about snow" class="about__snow-2">
+        <img src="assets/img/logo.png" alt="" class="dlogo">
+        <h1>Donation Form</h1>
+        <p>Thanks for donating to our cause!</p>
+        <label for="firstName">Name*</label><br>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name"><br><br>
+        <label for="email">Email*</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        <label for="amount">How much would you like to donate?</label><br>
+        <input type="number" id="amount" name="amount" placeholder="Amount"> USD<br><br>
+        <label for="method">How would you like to donate?*</label><br>
+        <select id="method" name="method">
+            <option value="creditCard">Credit Card</option>
+            <option value="debitCard">Debit Card</option>
+            <option value="paypal">PayPal</option>
+        </select><br><br>
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to make a donation, and proceed to pay.*</label><br><br>
+        <input type="submit" value="Proceed">
+
+    </form>
+    <script src="script.js"></script>
+</body>
+
+
+
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+
+
+</html>
